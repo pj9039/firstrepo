@@ -1,6 +1,7 @@
 import win32com.client
 from datetime import datetime
 
+
 class Daeshin():
     def login(self):
         """

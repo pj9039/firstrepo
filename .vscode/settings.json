@@ -22,5 +22,6 @@
     "python.linting.pep8Args": [
         "--ignore=E265"
     ],
-    "python.unitTest.promptToConfigure": false
+    "python.unitTest.promptToConfigure": false,
+    "python.linting.pylintEnabled": false
 }
