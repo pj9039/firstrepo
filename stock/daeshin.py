@@ -283,6 +283,3 @@ class GetCurStockPrice():
 
         print("실시간 현재가 요청 시작")
         self.isSB = True
-
-a = GetCurStockPrice()
-a.GetCurStockPriceSub()
