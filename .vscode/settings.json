@@ -1,2 +1,26 @@
 {
+    "python.linting.pylintPath": "${env.USERPROFILE}/AppData/Local/Programs/Python/Python36-32/Scripts/pylint.exe",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.idea": true
+    },
+    "search.exclude": {
+        "**/.idea": true
+    },
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    
+
+    // Arguments passed in. Each argument is a separate item in the array.
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s", "firstProject/pytest",
+        "-p", "*test*.py"
+    ],
+    "python.linting.pep8Enabled": true,
+    "python.linting.pep8Args": [
+        "--ignore=E265"
+    ],
+    "python.unitTest.promptToConfigure": false
 }
