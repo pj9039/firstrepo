@@ -58,17 +58,16 @@ class MyTableWidget(QWidget):
         self.label4.move(0, 40)
         self.label4.setText("사용가능한 마켓 정보 리스트")
 
-
         self.btn3 = QPushButton(self.frame1, text="확인")
-      
         self.btn3.move(200, 30)
+
         marketList = a.get_market_list()
         self.btn3.clicked.connect(partial(self.getMarketList, marketList))
         self.textbox = QLineEdit(self.frame1)
         self.textbox.resize(300, 300)
         self.textbox.move(0, 100)
 
-        # Add tabs
+        # 탭추가
         self.tabs.addTab(self.tab1, "Tab 1")
         self.tabs.addTab(self.tab2, "Tab 2")
 
@@ -89,6 +88,7 @@ class MyTableWidget(QWidget):
 
     def IsLogin(self, status):
         self.label3.setText(str(status))
+        
     def getMarketList(self, list):
         self.textbox.setText(str(list))
 
