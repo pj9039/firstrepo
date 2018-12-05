@@ -5,7 +5,7 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import pyqtSlot, QRect
 from functools import partial
 from daeshin import Daeshin
-
+#dev branch
 
 class App(QMainWindow):
 
