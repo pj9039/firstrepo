@@ -7,6 +7,7 @@ from functools import partial
 from daeshin import Daeshin
 #return master
 
+#수정2
 class App(QMainWindow):
 
     def __init__(self):
